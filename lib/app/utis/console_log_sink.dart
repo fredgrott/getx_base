@@ -14,6 +14,7 @@ import 'package:logging/logging.dart';
 //  messageSink.attachToLogger(Logger.root);
 // from logsinks which appears not to be updated anymore
 //is from Sornt Poppe under mIT license
+// https://github.com/soernt
 class ConsoleLogSink implements ILogMessageSink {
 
   StreamSubscription<LogRecord> _subscription;

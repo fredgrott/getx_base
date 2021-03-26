@@ -1,4 +1,5 @@
 import 'package:getx_base/app/utis/build_modes.dart';
+import 'package:getx_base/app/utis/console_log_sink.dart';
 import 'package:logging/logging.dart';
 import 'package:logging_appenders/logging_appenders.dart';
 
@@ -10,6 +11,9 @@ void myLogSetUp() {
     final appender = PrintAppender.setupLogging(stderrLevel: Level.SEVERE);
     PrintAppender(formatter: const ColorFormatter())
         .attachToLogger(Logger.root);
+    
+    final messageSink = ConsoleLogSink();
+    messageSink.attachToLogger(Logger.root);
   } else {
     // turn logging into NOOP for release and profile modes
     Logger.root.level = Level.OFF;
