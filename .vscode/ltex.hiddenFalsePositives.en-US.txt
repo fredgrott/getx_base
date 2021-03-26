@@ -1,0 +1,8 @@
+{"rule":"WORD_CONTAINS_UNDERSCORE","sentence":"^\\QGetx_base\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Q-Goldens-testing setup with EBAY goldens-toolkit library\\E$"}
+{"rule":"MULTIPLICATION_SIGN","sentence":"^\\QAny state management based on ChangeNotifier is O*N^2 which is terrible performance due to use of plain list instead of Linked-List\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QAny state management based on ChangeNotifier is O*N^2 which is terrible performance due to use of plain list instead of Linked-List\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Q-GetX Pattern Architecture\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Q-ChangeNotifier Benchmark, note that this includes the benchmark of the proposed but not in sdk changenotifier mod\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Q-GetX repo\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QIt follows the GetX Architecture Patterns\\E$"}
