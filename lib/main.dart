@@ -1,9 +1,6 @@
 // Copyright 2021 by Fredrick Allan Grott
 // BSD-style license that can be found in the LICENSE file.
 
-
-
-
 import 'dart:async';
 import 'dart:developer';
 
@@ -13,29 +10,28 @@ import 'package:flutter/widgets.dart';
 import 'package:getx_base/app/utis/build_modes.dart';
 import 'package:getx_base/app/utis/my_log_setup.dart';
 import 'package:getx_base/app/utis/platform_targets.dart';
+import 'package:getx_base/my_dI_init.dart';
 import 'package:getx_base/presentation/my_app.dart';
 import 'package:logging/logging.dart';
 
-
 final Logger myMainLogger = Logger("myMain");
 Future<void> main() async {
-
   WidgetsFlutterBinding.ensureInitialized();
 
   initPlatformState();
 
   myLogSetUp();
 
+  myDIInit();
 
   myMainLogger.info("init of main function completed");
 
-  
   ErrorWidget.builder = (FlutterErrorDetails details) {
-      if (isInDebugMode){
-          return ErrorWidget(details.exception);
-      }
-      
-      return Container(
+    if (isInDebugMode) {
+      return ErrorWidget(details.exception);
+    }
+
+    return Container(
       alignment: Alignment.center,
       child: const Text(
         'Error!',
@@ -43,7 +39,6 @@ Future<void> main() async {
         textDirection: TextDirection.ltr,
       ),
     );
-
   };
 
   FlutterError.onError = (FlutterErrorDetails details) async {
@@ -58,13 +53,6 @@ Future<void> main() async {
       }
     }
   };
-
-
-
-
-
-
-
 
   runZonedGuarded<Future<void>>(
     () async {
@@ -86,10 +74,7 @@ Future<void> main() async {
       },
     ),
   );
-
 }
-
-
 
 Future<void> _reportError(dynamic error, dynamic stackTrace) async {
   log('Caught error: $error');
@@ -104,7 +89,7 @@ Future<void> _reportError(dynamic error, dynamic stackTrace) async {
   } else {
     // reporting error and stacktrace to app exceptions provider code goes here
     if (isInReleaseMode) {
-        // code goes here
+      // code goes here
     }
   }
 }
