@@ -232,6 +232,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "4.0.0-prev3"
+  equatable:
+    dependency: "direct main"
+    description:
+      name: equatable
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.0"
   fake_async:
     dependency: transitive
     description:
@@ -275,6 +282,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_platform_widgets:
+    dependency: "direct main"
+    description:
+      name: flutter_platform_widgets
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.1.0"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -297,6 +311,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "3.26.0"
+  get_test:
+    dependency: "direct main"
+    description:
+      name: get_test
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "3.13.3"
   glob:
     dependency: transitive
     description:
@@ -619,4 +640,4 @@ packages:
     version: "3.1.0"
 sdks:
   dart: ">=2.12.0 <3.0.0"
-  flutter: ">=1.20.0"
+  flutter: ">=1.24.0"

@@ -39,6 +39,11 @@ dependencies:
   logging_appenders: ^1.0.0
   device_info_plus: ^1.0.0
   get: ^3.26.0
+  get_test: ^3.13.3
+  equatable: ^2.0.0
+  flutter_platform_widgets: ^1.1.0
+
+  
 
 
 dev_dependencies:
