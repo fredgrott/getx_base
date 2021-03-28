@@ -311,6 +311,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "3.26.0"
+  get_command:
+    dependency: "direct main"
+    description:
+      name: get_command
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.5"
   get_test:
     dependency: "direct main"
     description:

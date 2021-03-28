@@ -6,7 +6,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
 
+
+
 class MyApp extends StatelessWidget {
+  
 
   final Brightness brightness = Brightness.light;
   // This widget is the root of your application.
@@ -30,6 +33,7 @@ class MyApp extends StatelessWidget {
       data: brightness == Brightness.light ? materialTheme : materialDarkTheme,
       child: PlatformProvider(
         builder: (context) => PlatformApp(
+          // ignore: prefer_const_literals_to_create_immutables
           localizationsDelegates: <LocalizationsDelegate<dynamic>>[
             DefaultMaterialLocalizations.delegate,
             DefaultWidgetsLocalizations.delegate,

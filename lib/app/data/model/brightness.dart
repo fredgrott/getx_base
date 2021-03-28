@@ -1,6 +1,0 @@
-
-
-enum Brightness{
-  light,
-  dark,
-}
